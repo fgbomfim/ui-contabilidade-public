@@ -1,6 +1,8 @@
 :root {
-	--oxford-blue: #0D1E32ff;
-	--oxford-blue-2: #121F33ff;
+	--oxford-blue: #0D1E32;
+	--oxford-blue-light: #0D1E32ff;
+	--oxford-blue-2: #121F33;
+	--oxford-blue-2-light: #121F33ff;
 	--slate-gray: #858D99ff;
 	--oxford-blue-3: #102136ff;
 	--platinum: #E2E5E9ff;
