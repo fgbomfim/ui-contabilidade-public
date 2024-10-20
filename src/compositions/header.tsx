@@ -4,6 +4,7 @@ import Column from "../components/column";
 
 import Logo from '../elements/logo';
 import { HeaderProps } from "../interfaces/header-props";
+import Row from "../components/row";
 
 export default function Header({ page }: HeaderProps) {
   const navigate = useNavigate();
@@ -19,7 +20,7 @@ export default function Header({ page }: HeaderProps) {
   return (
     <NavBar>
       <Column>
-        <Container>
+        <Row>
           <Button
             id="header-button-home"
             data-cy="header-button-home"
@@ -95,7 +96,7 @@ export default function Header({ page }: HeaderProps) {
               </Li>
             </Ul>
           </Main>
-        </Container>
+        </Row>
       </Column>
     </NavBar>
   );
@@ -117,13 +118,7 @@ const Button = styled.button`
 const NavBar = styled.nav`
   display: flex;
   height: 65px;
-  background-color: var(--oxford-blue-3);
-`;
-
-const Container = styled.div`
-  display: flex;
-  flex-direction: row;
-  width: 100%;
+  background-color: var(--oxford-blue);
 `;
 
 const Main = styled.div`
