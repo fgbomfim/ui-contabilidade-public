@@ -2,13 +2,14 @@ import styled from "styled-components";
 import Header from "../compositions/header";
 import { PropsWithChildren } from "react";
 import { HeaderProps } from "../interfaces/header-props";
+import Footer from "../compositions/footer";
 
 export default function Layout({ children, page }: PropsWithChildren<HeaderProps>) {
   return (
     <Main>
       <Header page={page} />
       {children}
-      <div>footer</div>
+      <Footer />
     </Main>
   )
 };
