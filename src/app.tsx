@@ -1,25 +1,21 @@
 import React from 'react';
-import styled from 'styled-components';
-import Header from './compositions/header';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './pages/home';
+import AboutUs from './pages/about-us';
+import Contact from './pages/contact';
+import Services from './pages/services';
+import NotFound from './pages/not-found';
 
 export default function App() {
   return (
-    <Main>
-      <Header />
-
-      <main>Main</main>
-
-      <footer>
-        footer
-      </footer>
-    </Main>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" index element={<Home />} />
+        <Route path="about-us" element={<AboutUs />} />
+        <Route path="contacts" element={<Contact />} />
+        <Route path="services" element={<Services />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-const Main = styled.div`
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  min-height: 100vh;
-  text-align: center;
-`;
