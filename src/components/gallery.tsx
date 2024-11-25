@@ -1,32 +1,24 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import styled from "styled-components";
+import TaxConsultancy from '../assets/image/tax-consultancy.jpg';
+import BankReconciliation from '../assets/image/bank-reconciliation.png';
 
 interface SliderProps {
   id: number;
-  color: string;
+  background: string;
   text: string;
 }
 const sliders: SliderProps[] = [
   {
     id: 1,
-    color: '#5b8',
-    text: 'Slide 1',
+    background: TaxConsultancy,
+    text: 'Assessoria tributária',
   },
   {
     id: 2,
-    color: '#85b',
-    text: 'Slide 2',
-  },
-  {
-    id: 3,
-    color: '#e95',
-    text: 'Slide 3',
-  },
-  {
-    id: 4,
-    color: '#e59',
-    text: 'Slide 4',
-  },
+    background: BankReconciliation,
+    text: 'Conciliação bancária',
+  }
 ];
 
 export default function Gallery() {
@@ -37,10 +29,10 @@ export default function Gallery() {
       ))}
 
       <Slider className="slider">
-        {sliders.map(({ id, color, text }) => (
-          <div key={`slider${id}`} style={{ background: color }}>
+        {sliders.map(({ id, background, text }) => (
+          <Div key={`slider${id}`} style={{ backgroundImage: `url(${background})` }}>
             <h2>{text}</h2>
-          </div>
+          </Div>
         ))}
       </Slider>
       
@@ -119,6 +111,7 @@ const Slider = styled.div`
   white-space: nowrap;
   font-size: 0;
   transition: 0.8s;
+  position: relative;
   > * {
     font-size: 1rem;
     display: inline-block;
@@ -129,6 +122,15 @@ const Slider = styled.div`
     background: none 50% no-repeat;
     background-size: cover;
   }
+`;
+
+const Div = styled.div`
+  position: relative;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
 `;
 
 const Label = styled.label`
