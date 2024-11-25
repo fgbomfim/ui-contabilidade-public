@@ -31,9 +31,9 @@ const sliders: SliderProps[] = [
 
 export default function Gallery() {
   return (
-    <Main className="CSSgal">
+    <Main>
       {sliders.map(({ id }) => (
-        <S key={`s${id}`} id={`s${id}`} className={`input${id}`} /> 
+        <Input key={`s${id}`} id={`s${id}`} name="slider" type="radio" className={`input${id}`} /> 
       ))}
 
       <Slider className="slider">
@@ -45,17 +45,27 @@ export default function Gallery() {
       </Slider>
       
       <PrevNext className="prevNext">
-        <div><A href="#s4" /><A href="#s2" /></div>
-        <div><A href="#s1" /><A href="#s3" /></div>
-        <div><A href="#s2" /><A href="#s4" /></div>
-        <div><A href="#s3" /><A href="#s1" /></div>
+        {sliders.map(({ id }) => (
+          <div key={`prevNext${id}`}>
+            {id === 1 ? (
+              <Label htmlFor={`s${sliders.length}`} />
+            ) : (
+              <Label htmlFor={`s${id - 1}`} />
+            )}
+
+            {id === sliders.length ? (
+              <Label htmlFor="s1" />
+            ) : (
+              <Label htmlFor={`s${id + 1}`} />
+            )}
+          </div>
+        ))}
       </PrevNext>
 
       <Bullets className="bullets">
-        <A href="#s1">1</A>
-        <A href="#s2">2</A>
-        <A href="#s3">3</A>
-        <A href="#s4">4</A>
+        {sliders.map(({ id }) => (
+          <Label htmlFor={`s${id}`} key={`label${id}`}>{id}</Label>
+        ))}
       </Bullets>
     </Main>
   );
@@ -70,8 +80,9 @@ const Main = styled.div`
   text-align: center;
 `;
 
-const S = styled.s`
-  &:target {
+const Input = styled.input`
+  display: none;
+  &:checked {
     ~ {
       .prevNext >* { visibility: hidden; }
       .bullets >* { background: rgba(255, 255, 255, 0.5); }
@@ -120,7 +131,7 @@ const Slider = styled.div`
   }
 `;
 
-const A = styled.a`
+const Label = styled.label`
   border-radius: 50%;
   margin: 0 3px;
   color: rgba(0,0,0,0.8);
@@ -138,7 +149,7 @@ const PrevNext = styled.div`
     visibility: hidden;
   }
 
-  a {
+  label {
     background: #fff;
     position: absolute;
     width:       60px;
@@ -156,7 +167,7 @@ const PrevNext = styled.div`
       opacity: 1;
     }
 
-    +a {
+    + label {
       left: auto;
       right: 0;
     }
@@ -171,7 +182,7 @@ const Bullets = styled.div`
   width: 100%;
   text-align: center;
 
-  > a {
+  > label {
     display: inline-block;
     width:       30px;
     height:      30px;
@@ -182,7 +193,7 @@ const Bullets = styled.div`
     -webkit-transition: 0.3s;
             transition: 0.3s;
 
-    + a {
+    + label {
       background: rgba(255, 255, 255, 0.5);
     }
 
