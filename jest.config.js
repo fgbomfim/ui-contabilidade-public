@@ -1,7 +1,10 @@
-/** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
+/** @type {import('jest').Config} */
 module.exports = {
   testMatch: ['**/?(*.)+(test).ts?(x)'],
-  collectCoverageFrom: ['<rootDir>/src/**/*.{js,jsx,ts,tsx}'],
+  collectCoverageFrom: [
+    '<rootDir>/src/**/*.{js,jsx,ts,tsx}',
+    '!<rootDir>/src/report-web-vitals.ts',
+  ],
   coverageDirectory: 'coverage',
   coveragePathIgnorePatterns: ['/node_modules/'],
   coverageThreshold: {
