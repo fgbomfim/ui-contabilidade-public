@@ -3,13 +3,13 @@ import Layout from "../components/layout";
 import Column from "../components/column";
 
 import Banner1 from '../assets/image/banner-hand-pencil-1.png';
-import BannerBottom from '../assets/image/banner-bottom-1.png';
 import BPO from '../assets/image/bpo.png';
 import Consult from '../assets/image/consult.png';
 import ServiceImage from '../assets/image/services.png';
 import CardSolutionsBusiness, {
   CardSolutionsBusinessProps,
 } from "../components/card-solutions-business";
+import Gallery from "../components/gallery";
 
 const solutions: CardSolutionsBusinessProps[] = [
   {
@@ -63,7 +63,7 @@ export default function Home() {
           </ContainerCards>
         </Services>
         <DivBannerBottom>
-          <Image src={BannerBottom} />
+          <Gallery />
         </DivBannerBottom>
       </Column>
     </Layout>
@@ -109,10 +109,6 @@ const TitleServices = styled.h1`
 const DivBannerBottom = styled.div`
   width: 100%;
   height: 439px;
-`;
-
-const Image = styled.img`
-  width: 100%;
 `;
 
 const ContainerCards = styled.div`
