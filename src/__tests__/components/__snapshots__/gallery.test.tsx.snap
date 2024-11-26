@@ -1,0 +1,454 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Gallery component renders without throwing an error 1`] = `
+<div>
+  <div
+    class="sc-blHHSb eDyqre"
+  >
+    <input
+      class="sc-gtLWhw etimfb input1"
+      id="s1"
+      name="slider"
+      type="radio"
+    />
+    <input
+      class="sc-gtLWhw etimfb input2"
+      id="s2"
+      name="slider"
+      type="radio"
+    />
+    <input
+      class="sc-gtLWhw etimfb input3"
+      id="s3"
+      name="slider"
+      type="radio"
+    />
+    <input
+      class="sc-gtLWhw etimfb input4"
+      id="s4"
+      name="slider"
+      type="radio"
+    />
+    <input
+      class="sc-gtLWhw etimfb input5"
+      id="s5"
+      name="slider"
+      type="radio"
+    />
+    <input
+      class="sc-gtLWhw etimfb input6"
+      id="s6"
+      name="slider"
+      type="radio"
+    />
+    <input
+      class="sc-gtLWhw etimfb input7"
+      id="s7"
+      name="slider"
+      type="radio"
+    />
+    <input
+      class="sc-gtLWhw etimfb input8"
+      id="s8"
+      name="slider"
+      type="radio"
+    />
+    <input
+      class="sc-gtLWhw etimfb input9"
+      id="s9"
+      name="slider"
+      type="radio"
+    />
+    <input
+      class="sc-gtLWhw etimfb input10"
+      id="s10"
+      name="slider"
+      type="radio"
+    />
+    <input
+      class="sc-gtLWhw etimfb input11"
+      id="s11"
+      name="slider"
+      type="radio"
+    />
+    <input
+      class="sc-gtLWhw etimfb input12"
+      id="s12"
+      name="slider"
+      type="radio"
+    />
+    <div
+      class="sc-egkSDF hryVae slider"
+    >
+      <div
+        class="sc-fAUdSK jAbdjO"
+        role="slider"
+        style="background-image: url(tax-consultancy.jpg);"
+      >
+        <h2>
+          <button
+            class="sc-kLhKbu gRbcXn"
+            data-testid="goToService1"
+          >
+            Assessoria Tributária
+          </button>
+        </h2>
+      </div>
+      <div
+        class="sc-fAUdSK jAbdjO"
+        role="slider"
+        style="background-image: url(bank-reconciliation.png);"
+      >
+        <h2>
+          <button
+            class="sc-kLhKbu gRbcXn"
+            data-testid="goToService2"
+          >
+            Conciliação Bancária
+          </button>
+        </h2>
+      </div>
+      <div
+        class="sc-fAUdSK jAbdjO"
+        role="slider"
+        style="background-image: url(tax-planning.webp);"
+      >
+        <h2>
+          <button
+            class="sc-kLhKbu gRbcXn"
+            data-testid="goToService3"
+          >
+            Planejamento Tributário
+          </button>
+        </h2>
+      </div>
+      <div
+        class="sc-fAUdSK jAbdjO"
+        role="slider"
+        style="background-image: url(account-receivable.jpg);"
+      >
+        <h2>
+          <button
+            class="sc-kLhKbu gRbcXn"
+            data-testid="goToService4"
+          >
+            Contas a Receber
+          </button>
+        </h2>
+      </div>
+      <div
+        class="sc-fAUdSK jAbdjO"
+        role="slider"
+        style="background-image: url(cash-flow.jpg);"
+      >
+        <h2>
+          <button
+            class="sc-kLhKbu gRbcXn"
+            data-testid="goToService5"
+          >
+            Fluxo de Caixa
+          </button>
+        </h2>
+      </div>
+      <div
+        class="sc-fAUdSK jAbdjO"
+        role="slider"
+        style="background-image: url(doc-manager.jpg);"
+      >
+        <h2>
+          <button
+            class="sc-kLhKbu gRbcXn"
+            data-testid="goToService6"
+          >
+            Gestão de Documentos
+          </button>
+        </h2>
+      </div>
+      <div
+        class="sc-fAUdSK jAbdjO"
+        role="slider"
+        style="background-image: url(ir.jpg);"
+      >
+        <h2>
+          <button
+            class="sc-kLhKbu gRbcXn"
+            data-testid="goToService7"
+          >
+            Imposto de Renda
+          </button>
+        </h2>
+      </div>
+      <div
+        class="sc-fAUdSK jAbdjO"
+        role="slider"
+        style="background-image: url(legalization-company.jpg);"
+      >
+        <h2>
+          <button
+            class="sc-kLhKbu gRbcXn"
+            data-testid="goToService8"
+          >
+            Legalização de Empresas
+          </button>
+        </h2>
+      </div>
+      <div
+        class="sc-fAUdSK jAbdjO"
+        role="slider"
+        style="background-image: url(mei.jpg);"
+      >
+        <h2>
+          <button
+            class="sc-kLhKbu gRbcXn"
+            data-testid="goToService9"
+          >
+            Atendimento MEI
+          </button>
+        </h2>
+      </div>
+      <div
+        class="sc-fAUdSK jAbdjO"
+        role="slider"
+        style="background-image: url(open-company.jpg);"
+      >
+        <h2>
+          <button
+            class="sc-kLhKbu gRbcXn"
+            data-testid="goToService10"
+          >
+            Abertura de Empresas
+          </button>
+        </h2>
+      </div>
+      <div
+        class="sc-fAUdSK jAbdjO"
+        role="slider"
+        style="background-image: url(holding.png);"
+      >
+        <h2>
+          <button
+            class="sc-kLhKbu gRbcXn"
+            data-testid="goToService11"
+          >
+            Estruturção de Negócios
+          </button>
+        </h2>
+      </div>
+      <div
+        class="sc-fAUdSK jAbdjO"
+        role="slider"
+        style="background-image: url(close-company.jpg);"
+      >
+        <h2>
+          <button
+            class="sc-kLhKbu gRbcXn"
+            data-testid="goToService12"
+          >
+            Encerramento de Empresas
+          </button>
+        </h2>
+      </div>
+    </div>
+    <div
+      class="sc-ivxoEo gWqLOz prevNext"
+    >
+      <div>
+        <label
+          class="sc-dntaoT dkmgeN"
+          for="s12"
+        />
+        <label
+          class="sc-dntaoT dkmgeN"
+          for="s2"
+        />
+      </div>
+      <div>
+        <label
+          class="sc-dntaoT dkmgeN"
+          for="s1"
+        />
+        <label
+          class="sc-dntaoT dkmgeN"
+          for="s3"
+        />
+      </div>
+      <div>
+        <label
+          class="sc-dntaoT dkmgeN"
+          for="s2"
+        />
+        <label
+          class="sc-dntaoT dkmgeN"
+          for="s4"
+        />
+      </div>
+      <div>
+        <label
+          class="sc-dntaoT dkmgeN"
+          for="s3"
+        />
+        <label
+          class="sc-dntaoT dkmgeN"
+          for="s5"
+        />
+      </div>
+      <div>
+        <label
+          class="sc-dntaoT dkmgeN"
+          for="s4"
+        />
+        <label
+          class="sc-dntaoT dkmgeN"
+          for="s6"
+        />
+      </div>
+      <div>
+        <label
+          class="sc-dntaoT dkmgeN"
+          for="s5"
+        />
+        <label
+          class="sc-dntaoT dkmgeN"
+          for="s7"
+        />
+      </div>
+      <div>
+        <label
+          class="sc-dntaoT dkmgeN"
+          for="s6"
+        />
+        <label
+          class="sc-dntaoT dkmgeN"
+          for="s8"
+        />
+      </div>
+      <div>
+        <label
+          class="sc-dntaoT dkmgeN"
+          for="s7"
+        />
+        <label
+          class="sc-dntaoT dkmgeN"
+          for="s9"
+        />
+      </div>
+      <div>
+        <label
+          class="sc-dntaoT dkmgeN"
+          for="s8"
+        />
+        <label
+          class="sc-dntaoT dkmgeN"
+          for="s10"
+        />
+      </div>
+      <div>
+        <label
+          class="sc-dntaoT dkmgeN"
+          for="s9"
+        />
+        <label
+          class="sc-dntaoT dkmgeN"
+          for="s11"
+        />
+      </div>
+      <div>
+        <label
+          class="sc-dntaoT dkmgeN"
+          for="s10"
+        />
+        <label
+          class="sc-dntaoT dkmgeN"
+          for="s12"
+        />
+      </div>
+      <div>
+        <label
+          class="sc-dntaoT dkmgeN"
+          for="s11"
+        />
+        <label
+          class="sc-dntaoT dkmgeN"
+          for="s1"
+        />
+      </div>
+    </div>
+    <div
+      class="sc-ghWlax gAzFlk bullets"
+    >
+      <label
+        class="sc-dntaoT dkmgeN"
+        for="s1"
+      >
+        1
+      </label>
+      <label
+        class="sc-dntaoT dkmgeN"
+        for="s2"
+      >
+        2
+      </label>
+      <label
+        class="sc-dntaoT dkmgeN"
+        for="s3"
+      >
+        3
+      </label>
+      <label
+        class="sc-dntaoT dkmgeN"
+        for="s4"
+      >
+        4
+      </label>
+      <label
+        class="sc-dntaoT dkmgeN"
+        for="s5"
+      >
+        5
+      </label>
+      <label
+        class="sc-dntaoT dkmgeN"
+        for="s6"
+      >
+        6
+      </label>
+      <label
+        class="sc-dntaoT dkmgeN"
+        for="s7"
+      >
+        7
+      </label>
+      <label
+        class="sc-dntaoT dkmgeN"
+        for="s8"
+      >
+        8
+      </label>
+      <label
+        class="sc-dntaoT dkmgeN"
+        for="s9"
+      >
+        9
+      </label>
+      <label
+        class="sc-dntaoT dkmgeN"
+        for="s10"
+      >
+        10
+      </label>
+      <label
+        class="sc-dntaoT dkmgeN"
+        for="s11"
+      >
+        11
+      </label>
+      <label
+        class="sc-dntaoT dkmgeN"
+        for="s12"
+      >
+        12
+      </label>
+    </div>
+  </div>
+</div>
+`;
