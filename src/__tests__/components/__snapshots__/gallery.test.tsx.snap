@@ -256,198 +256,270 @@ exports[`Gallery component renders without throwing an error 1`] = `
         <label
           class="sc-dntaoT dkmgeN"
           for="s12"
-        />
+        >
+          <i
+            class="fa-solid fa-arrow-left"
+          />
+        </label>
         <label
           class="sc-dntaoT dkmgeN"
           for="s2"
-        />
+        >
+          <i
+            class="fa-solid fa-arrow-right"
+          />
+        </label>
       </div>
       <div>
         <label
           class="sc-dntaoT dkmgeN"
           for="s1"
-        />
+        >
+          <i
+            class="fa-solid fa-arrow-left"
+          />
+        </label>
         <label
           class="sc-dntaoT dkmgeN"
           for="s3"
-        />
+        >
+          <i
+            class="fa-solid fa-arrow-right"
+          />
+        </label>
       </div>
       <div>
         <label
           class="sc-dntaoT dkmgeN"
           for="s2"
-        />
+        >
+          <i
+            class="fa-solid fa-arrow-left"
+          />
+        </label>
         <label
           class="sc-dntaoT dkmgeN"
           for="s4"
-        />
+        >
+          <i
+            class="fa-solid fa-arrow-right"
+          />
+        </label>
       </div>
       <div>
         <label
           class="sc-dntaoT dkmgeN"
           for="s3"
-        />
+        >
+          <i
+            class="fa-solid fa-arrow-left"
+          />
+        </label>
         <label
           class="sc-dntaoT dkmgeN"
           for="s5"
-        />
+        >
+          <i
+            class="fa-solid fa-arrow-right"
+          />
+        </label>
       </div>
       <div>
         <label
           class="sc-dntaoT dkmgeN"
           for="s4"
-        />
+        >
+          <i
+            class="fa-solid fa-arrow-left"
+          />
+        </label>
         <label
           class="sc-dntaoT dkmgeN"
           for="s6"
-        />
+        >
+          <i
+            class="fa-solid fa-arrow-right"
+          />
+        </label>
       </div>
       <div>
         <label
           class="sc-dntaoT dkmgeN"
           for="s5"
-        />
+        >
+          <i
+            class="fa-solid fa-arrow-left"
+          />
+        </label>
         <label
           class="sc-dntaoT dkmgeN"
           for="s7"
-        />
+        >
+          <i
+            class="fa-solid fa-arrow-right"
+          />
+        </label>
       </div>
       <div>
         <label
           class="sc-dntaoT dkmgeN"
           for="s6"
-        />
+        >
+          <i
+            class="fa-solid fa-arrow-left"
+          />
+        </label>
         <label
           class="sc-dntaoT dkmgeN"
           for="s8"
-        />
+        >
+          <i
+            class="fa-solid fa-arrow-right"
+          />
+        </label>
       </div>
       <div>
         <label
           class="sc-dntaoT dkmgeN"
           for="s7"
-        />
+        >
+          <i
+            class="fa-solid fa-arrow-left"
+          />
+        </label>
         <label
           class="sc-dntaoT dkmgeN"
           for="s9"
-        />
+        >
+          <i
+            class="fa-solid fa-arrow-right"
+          />
+        </label>
       </div>
       <div>
         <label
           class="sc-dntaoT dkmgeN"
           for="s8"
-        />
+        >
+          <i
+            class="fa-solid fa-arrow-left"
+          />
+        </label>
         <label
           class="sc-dntaoT dkmgeN"
           for="s10"
-        />
+        >
+          <i
+            class="fa-solid fa-arrow-right"
+          />
+        </label>
       </div>
       <div>
         <label
           class="sc-dntaoT dkmgeN"
           for="s9"
-        />
+        >
+          <i
+            class="fa-solid fa-arrow-left"
+          />
+        </label>
         <label
           class="sc-dntaoT dkmgeN"
           for="s11"
-        />
+        >
+          <i
+            class="fa-solid fa-arrow-right"
+          />
+        </label>
       </div>
       <div>
         <label
           class="sc-dntaoT dkmgeN"
           for="s10"
-        />
+        >
+          <i
+            class="fa-solid fa-arrow-left"
+          />
+        </label>
         <label
           class="sc-dntaoT dkmgeN"
           for="s12"
-        />
+        >
+          <i
+            class="fa-solid fa-arrow-right"
+          />
+        </label>
       </div>
       <div>
         <label
           class="sc-dntaoT dkmgeN"
           for="s11"
-        />
+        >
+          <i
+            class="fa-solid fa-arrow-left"
+          />
+        </label>
         <label
           class="sc-dntaoT dkmgeN"
           for="s1"
-        />
+        >
+          <i
+            class="fa-solid fa-arrow-right"
+          />
+        </label>
       </div>
     </div>
     <div
-      class="sc-ghWlax gAzFlk bullets"
+      class="sc-ghWlax hwrYdA bullets"
     >
       <label
         class="sc-dntaoT dkmgeN"
         for="s1"
-      >
-        1
-      </label>
+      />
       <label
         class="sc-dntaoT dkmgeN"
         for="s2"
-      >
-        2
-      </label>
+      />
       <label
         class="sc-dntaoT dkmgeN"
         for="s3"
-      >
-        3
-      </label>
+      />
       <label
         class="sc-dntaoT dkmgeN"
         for="s4"
-      >
-        4
-      </label>
+      />
       <label
         class="sc-dntaoT dkmgeN"
         for="s5"
-      >
-        5
-      </label>
+      />
       <label
         class="sc-dntaoT dkmgeN"
         for="s6"
-      >
-        6
-      </label>
+      />
       <label
         class="sc-dntaoT dkmgeN"
         for="s7"
-      >
-        7
-      </label>
+      />
       <label
         class="sc-dntaoT dkmgeN"
         for="s8"
-      >
-        8
-      </label>
+      />
       <label
         class="sc-dntaoT dkmgeN"
         for="s9"
-      >
-        9
-      </label>
+      />
       <label
         class="sc-dntaoT dkmgeN"
         for="s10"
-      >
-        10
-      </label>
+      />
       <label
         class="sc-dntaoT dkmgeN"
         for="s11"
-      >
-        11
-      </label>
+      />
       <label
         class="sc-dntaoT dkmgeN"
         for="s12"
-      >
-        12
-      </label>
+      />
     </div>
   </div>
 </div>

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import styled, { css } from "styled-components";
 import { useNavigate } from "react-router-dom";
 import { SLIDERS } from "../constants/app";
@@ -29,9 +29,7 @@ function generateCSS() {
   return css`${styles}`;
 }
 
-
 export default function Gallery() {
-  const refNext = useRef<HTMLLabelElement>(null);
   const [count, setCount] = useState(1);
   const { length} = SLIDERS;
   const navigation = useNavigate();
@@ -81,15 +79,23 @@ export default function Gallery() {
         {SLIDERS.map(({ id }) => (
           <div key={`prevNext${id}`}>
             {id === 1 ? (
-              <Label htmlFor={`s${SLIDERS.length}`} />
+              <Label htmlFor={`s${SLIDERS.length}`}>
+                <i className="fa-solid fa-arrow-left" />
+              </Label>
             ) : (
-              <Label htmlFor={`s${id - 1}`} />
+              <Label htmlFor={`s${id - 1}`}>
+                <i className="fa-solid fa-arrow-left" />
+              </Label>
             )}
 
             {id === SLIDERS.length ? (
-              <Label htmlFor="s1" ref={refNext} />
+              <Label htmlFor="s1">
+                <i className="fa-solid fa-arrow-right" />
+              </Label>
             ) : (
-              <Label htmlFor={`s${id + 1}`} ref={refNext} />
+              <Label htmlFor={`s${id + 1}`}>
+                <i className="fa-solid fa-arrow-right" />
+              </Label>
             )}
           </div>
         ))}
@@ -97,7 +103,7 @@ export default function Gallery() {
 
       <Bullets className="bullets">
         {SLIDERS.map(({ id }) => (
-          <Label htmlFor={`s${id}`} key={`label${id}`}>{id}</Label>
+          <Label htmlFor={`s${id}`} key={`label${id}`} />
         ))}
       </Bullets>
     </Main>
@@ -205,8 +211,8 @@ const Bullets = styled.div`
 
   > label {
     display: inline-block;
-    width:       30px;
-    height:      30px;
+    width:       15px;
+    height:      15px;
     line-height: 30px;
     text-decoration: none;
     text-align: center;
