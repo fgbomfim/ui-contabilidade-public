@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/home';
 import AboutUs from './pages/about-us';
 import Contact from './pages/contact';
@@ -8,7 +8,7 @@ import NotFound from './pages/not-found';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" index element={<Home />} />
         <Route path="about-us" element={<AboutUs />} />
@@ -16,6 +16,6 @@ export default function App() {
         <Route path="services" element={<Services />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
