@@ -50,6 +50,11 @@ const FooterBar = styled.nav`
   width: 100%;
   padding: 25px 0px;
   background-color: var(--oxford-blue-3);
+
+  @media (max-width: 580px) {
+    display: none;
+    grid-template-columns: 1fr;
+  }
 `;
 
 const Div = styled.div`

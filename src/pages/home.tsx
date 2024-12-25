@@ -85,6 +85,13 @@ const BannersTop = styled.div`
   text-align: center;
   align-items: center;
   justify-items: center;
+  
+  @media (max-width: 580px) {
+    font-size: 30px;
+    height: 120px;
+    color: var(--oxford-blue);
+    font-weight: bold;
+  }
 `;
 
 const Services = styled.div`
@@ -95,6 +102,11 @@ const Services = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media (max-width: 580px) {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 `;
 
 const TitleServices = styled.h1`
@@ -108,7 +120,6 @@ const TitleServices = styled.h1`
 
 const DivBannerBottom = styled.div`
   width: 100%;
-  height: 439px;
 `;
 
 const ContainerCards = styled.div`
@@ -116,4 +127,9 @@ const ContainerCards = styled.div`
   flex-direction: row;
   justify-content: space-between;
   padding: 16px;
+
+  @media (max-width: 580px) {
+    flex-direction: column;
+    /* grid-template-columns: 1fr; */
+  }
 `;

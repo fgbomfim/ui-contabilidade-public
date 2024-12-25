@@ -117,6 +117,10 @@ const Main = styled.div`
   background-color: var(--platinum);
   color: #fff;  
   text-align: center;
+  @media (max-width: 580px) {
+    height: 210px;
+    margin-bottom: 20px;
+  }
 `;
 
 const Input = styled.input`
@@ -147,6 +151,10 @@ const Slider = styled.div`
     background: none 50% no-repeat;
     background-size: cover;
   }
+
+  @media (max-width: 580px) {
+    height: 210px
+  }
 `;
 
 const Div = styled.div`
@@ -156,6 +164,10 @@ const Div = styled.div`
   justify-content: center;
   align-items: center;
   padding-top: 200px;
+
+  @media (max-width: 580px) {
+    padding-top: 90px;
+  }
 `;
 
 const Label = styled.label`

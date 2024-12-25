@@ -54,6 +54,11 @@ const Card = styled.div`
   width: 365px;
   height: 417px;
   background-color: #1E3A58;
+
+  @media (max-width: 580px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 `;
 
 const Image = styled.img`
