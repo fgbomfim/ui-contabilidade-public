@@ -14,7 +14,7 @@ export default function Footer() {
       <Column>
         <Row>
           <Grid>
-            <div><LogoTransparent /></div>
+            <Logo><LogoTransparent /></Logo>
             <Div>
               <A href="https://www.instagram.com/hsbomfim.contabilidade" target="_blank">
                 <Image src={Instagram} />
@@ -52,7 +52,6 @@ const FooterBar = styled.nav`
   background-color: var(--oxford-blue-3);
 
   @media (max-width: 580px) {
-    display: none;
     grid-template-columns: 1fr;
   }
 `;
@@ -63,7 +62,13 @@ const Div = styled.div`
   align-items: center;
   align-content: center;
   justify-content: center;
-  
+`;
+
+const Logo = styled.div`
+  @media (max-width: 580px) {
+    display: flex;
+    width: 100%;
+  }
 `;
 
 const Grid = styled.div`
