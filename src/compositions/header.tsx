@@ -50,8 +50,32 @@ export default function Header({ page }: HeaderProps) {
             <Ul>
               <Li className="header-menu-items-mobile">
                 <Button onClick={close} className="mobile-back">
-                <i className="fa-solid fa-arrow-left" />
+                  <i className="fa-solid fa-arrow-left" />
                 </Button>
+
+                <MobileHeaderItemsLogo>
+                  <Logo />
+
+                  <Contacts>
+                    <div>
+                      <Icon className="fa-brands fa-whatsapp" />
+                    </div>
+
+                    <Div style={{ paddingTop: 4 }}>
+                      <Div>
+                        <Text>(11) <Strong>95208-6786</Strong></Text>
+                      </Div>
+
+                      <Div>
+                        <Small>
+                          segunda a sexta
+                          <br />
+                          09:00-18:00
+                        </Small>
+                      </Div>    
+                    </Div>
+                  </Contacts>
+                </MobileHeaderItemsLogo>
               </Li>
               <Li className={page === 'about-us' ? 'active' : ''}>
                 <Button
@@ -77,17 +101,7 @@ export default function Header({ page }: HeaderProps) {
                 </Button>
               </Li>
 
-              <Li className={page === 'contact' ? 'active' : ''}>
-                <Button
-                  id="header-anchor-contacts"
-                  data-cy="header-anchor-contacts"
-                  data-testid="header-anchor-contacts"
-                  className="anchor"
-                  onClick={() => redirect('/contacts')}
-                >
-                  Contato
-                </Button>
-              </Li>
+              <Li />
 
               <Li
                 id="header-anchor-whatsapp"
@@ -152,6 +166,7 @@ const Button = styled.button`
     &.mobile {
       display: flex;
       color: var(--platinum);
+      /* border: 1px solid var(--platinum); */
     }
   }
 `;
@@ -177,6 +192,7 @@ const Main = styled.div`
     background-color: var(--platinum);
     &.open {
       display: flex;
+      z-index: 999;
     }
   }
 `;
@@ -192,6 +208,8 @@ const Ul = styled.ul`
   @media (max-width: 580px) {
     flex-direction: column;
     justify-content: flex-start;
+    z-index: 2;
+    border-left: 1px solid var(--platinum);
   }
 `;
 
@@ -217,8 +235,19 @@ const Li = styled.li`
   &.header-menu-items-mobile {
     display: none;
     padding-left: 20px;
+    background-color: var(--oxford-blue);
     @media (max-width: 580px) {
       display: flex;
+      button {
+        margin-right: 20px;
+        i {
+          border: 1px solid var(--platinum);
+          padding: 10px;
+          border-radius: 50%;
+          font-size: 20px;
+          color: var(--platinum);
+        }
+      }
     }
   }
 
@@ -263,4 +292,11 @@ const Strong = styled.span`
 
 const Small = styled.span`
   font-size: 12px;
+`;
+
+
+const MobileHeaderItemsLogo = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 `;

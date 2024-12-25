@@ -130,6 +130,5 @@ const ContainerCards = styled.div`
 
   @media (max-width: 580px) {
     flex-direction: column;
-    /* grid-template-columns: 1fr; */
   }
 `;
